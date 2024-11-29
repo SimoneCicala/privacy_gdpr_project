@@ -1,0 +1,12 @@
+# Python
+*.pyc
+__pycache__/
+
+# SQLite database
+user_data.db
+
+# File Excel temporanei
+*.xlsx~
+
+# File Excel
+*.xlsx

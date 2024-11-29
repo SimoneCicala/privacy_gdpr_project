@@ -1,0 +1,11 @@
+# Changelog
+
+Tutte le modifiche di questo progetto verranno documentate in questo file.
+
+## [1.0.0] - 2024-11-29
+### Aggiunto
+- Creazione di dati casuali per utenti con `Faker`.
+- Salvataggio dei dati in un file Excel utilizzando `openpyxl`.
+- Trasferimento dei dati dal file Excel a un database SQLite.
+- Funzionalità di ricerca nel database per nome o cognome.
+- Aggiunta la gestione delle versioni nel file `config.py`.
