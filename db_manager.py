@@ -45,17 +45,17 @@ if __name__ == "__main__":
     db_manager = DatabaseManager(db_name)
 
     # Messaggio di benvenuto per l'utente
-    print("Benvenuto! Puoi cercare utenti per Nome o Cognome.")
+    print("Benvenuto! Puoi cercare utenti per Nome, Cognome, Telefono o Email.")
 
-    # Richiedi all'utente di inserire il campo da cercare (nome o cognome)
-    search_field = input("Inserisci il campo da cercare (nome/cognome): ").lower()
+    # Richiedi all'utente di inserire il campo da cercare (nome, cognome, telefono o email)
+    search_field = input("Inserisci il campo da cercare (nome/cognome/telefono/email): ").lower()
 
     # Richiedi all'utente di inserire il valore da cercare per il campo selezionato
     search_value = input(f"Inserisci il valore da cercare per {search_field}: ")
 
     # Controlla se il campo inserito è valido
-    if search_field in ["nome", "cognome"]:
-        # Costruisci la query per cercare nel campo selezionato (nome o cognome)
+    if search_field in ["nome", "cognome", "telefono", "email"]:
+        # Costruisci la query per cercare nel campo selezionato (nome, cognome, telefono o email)
         query = f"SELECT * FROM utenti WHERE {search_field} LIKE ?"
 
         # Esegui la query con il valore di ricerca inserito dall'utente
@@ -69,8 +69,8 @@ if __name__ == "__main__":
         else:
             print("Nessun risultato trovato.")  # Messaggio se non sono stati trovati risultati
     else:
-        # Messaggio di errore se il campo non è valido (né "nome" né "cognome")
-        print("Campo non valido. Usa 'nome' o 'cognome'.")
+        # Messaggio di errore se il campo non è valido (né "nome", né "cognome", né "telefono", né "email")
+        print("Campo non valido. Usa 'nome', 'cognome', 'telefono' o 'email'.")
 
     # Chiudi la connessione al database
     db_manager.close_connection()

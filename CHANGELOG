@@ -9,3 +9,9 @@ Tutte le modifiche di questo progetto verranno documentate in questo file.
 - Trasferimento dei dati dal file Excel a un database SQLite.
 - Funzionalità di ricerca nel database per nome o cognome.
 - Aggiunta la gestione delle versioni nel file `config.py`.
+
+## [1.0.1] - 2024-12-07
+### Modifiche minori
+- Incrementata versione 1.0.1
+- Aggiunta la possibilità di interrogare tramite 'Telefono' ed 'Email' (db_manager.py)
+- Modificato il requirements.txt 
