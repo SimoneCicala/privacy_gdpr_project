@@ -29,3 +29,5 @@ Installa le dipendenze con:
 
 ```bash
 pip install -r requirements.txt
+
+Se dovessero essere riscontrati errori nell'installazione delle dipendenze aggiungere come parametro --break-system-packages
