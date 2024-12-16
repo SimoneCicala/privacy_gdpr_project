@@ -2,6 +2,15 @@
 
 Questo progetto simula la gestione dei dati personali in conformità con il GDPR (Regolamento Generale sulla Protezione dei Dati). Il sistema genera dati casuali per utenti, li salva in un file Excel e li trasferisce in un database SQLite.
 
+Prima di iniziare, assicurati di aver installato Python. Durante l'installazione, spunta l'opzione per aggiungere Python al PATH per evitare problemi di configurazione.
+
+
+Per eseguire i file Python, usa il comando:
+
+```bash
+python nome_del_file.py
+```
+
 ## Per iniziare
 
 1. **Configurazione**:
@@ -29,5 +38,11 @@ Installa le dipendenze con:
 
 ```bash
 pip install -r requirements.txt
+```
 
-Se dovessero essere riscontrati errori nell'installazione delle dipendenze aggiungere come parametro --break-system-packages
+Se dovessero essere riscontrati errori nell'installazione delle dipendenze, aggiungere come parametro --break-system-packages
+
+```bash
+pip install -r requirements.txt --break-system-packages
+```
+
